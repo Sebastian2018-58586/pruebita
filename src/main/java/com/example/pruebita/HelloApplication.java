@@ -67,6 +67,13 @@ public class HelloApplication extends Application {
             // Resultado final
             areaResultados.setText("Resultados del proceso entre " + cadenaInicial + " y " + cadenaFinal);
         });
+        botonLimpiar.setOnAction(event -> {
+
+            campoCadenaInicial.setText("");
+            campoCadenaFinal.setText("");
+            areaProcesos.setText("");
+            areaResultados.setText("");
+        });
 
         // Colocar todos los elementos en un VBox (layout vertical)
         VBox layout = new VBox(10);

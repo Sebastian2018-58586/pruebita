@@ -30,24 +30,6 @@ public class HelloController {
     @FXML
     private TextArea areaResultados;
 
-    @FXML
-    private Label welcomeText;
 
-    //Método que se ejecutará cuando se presione el botón "Vaciar"
-    @FXML
-    protected void vaciarCampos() {
-        System.out.println("Método vaciarCampos() llamado.");
-        // Limpiar todos los campos de texto y áreas de texto
-        List<Node> campos = Arrays.asList(campoCadenaInicial, campoCadenaFinal, areaProcesos, areaResultados);
 
-        // Limpiar cada campo
-        for (Node campo : campos) {
-            if (campo instanceof TextField) {
-                ((TextField) campo).setText(""); // Asigna texto vacío
-            } else if (campo instanceof TextArea) {
-                ((TextArea) campo).setText(""); // Asigna texto vacío
-            }
-        }
-        botonLimpiar.setText("Borrado");
-    }
 }
