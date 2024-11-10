@@ -23,7 +23,7 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
         public class HelloApplication extends Application {
-
+// cambios finales
             @Override
             public void start(Stage primaryStage) {
                 // Crear el título principal
