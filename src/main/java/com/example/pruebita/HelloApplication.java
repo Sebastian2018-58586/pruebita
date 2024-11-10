@@ -1,3 +1,14 @@
+Principal = new Label("Terminal Inteligente");
+        tituloPrincipal.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-font-family: 'Arial'; -fx-alignment: center; -fx-padding: 10;");
+
+        // Crear los campos de texto
+        TextField campoCadenaInicial = new TextField();
+        campoCadenaInicial.setPromptText("Cadena inicial");
+        campoCadenaInicial.setStyle("-fx-background-color: #333333; -fx-text-fill: white; -fx-border-color: #777777; -fx-padding: 5;");
+
+        TextField campoCadenaFinal = new TextField();
+        campoCadenaFinal.setPromptText("Cadena final");
+        campoCadenaFinal.setStyle("-fx-background-color: #333333; -fx-text-fill: white; -fx-border-color: #777777; -fx-padding: 5;");
 package com.example.pruebita;
 
 import javafx.application.Application;
@@ -11,23 +22,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-public class HelloApplication extends Application {
+        public class HelloApplication extends Application {
 
-    @Override
-    public void start(Stage primaryStage) {
-        // Crear el título principal
-        Label tituloPrincipal = new Label("Terminal Inteligente");
-        tituloPrincipal.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-font-family: 'Arial'; -fx-alignment: center; -fx-padding: 10;");
-
-        // Crear los campos de texto
-        TextField campoCadenaInicial = new TextField();
-        campoCadenaInicial.setPromptText("Cadena inicial");
-        campoCadenaInicial.setStyle("-fx-background-color: #333333; -fx-text-fill: white; -fx-border-color: #777777; -fx-padding: 5;");
-
-        TextField campoCadenaFinal = new TextField();
-        campoCadenaFinal.setPromptText("Cadena final");
-        campoCadenaFinal.setStyle("-fx-background-color: #333333; -fx-text-fill: white; -fx-border-color: #777777; -fx-padding: 5;");
-
+            @Override
+            public void start(Stage primaryStage) {
+                // Crear el título principal
+                Label titulo
         // Crear los botones "Ejecutar" y "Limpiar"
         Button botonEjecutar = new Button("Ejecutar");
         botonEjecutar.setStyle("-fx-background-color: #32CD32; -fx-font-weight: bold; -fx-text-fill: white; -fx-padding: 10;");
